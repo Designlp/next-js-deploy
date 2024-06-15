@@ -6,7 +6,7 @@ export default function Section1() {
     return (
         <>
             <section className="section-box">
-                <div className='container-spline'>
+                <div className='container-spline diva'>
                 {/* <Spline
         scene="https://prod.spline.design/ZgdSd1EG3vLDL3gn/scene.splinecode" 
       /> */}
@@ -14,6 +14,7 @@ export default function Section1() {
       <spline-viewer loading-anim-type="spinner-big-light" url="https://prod.spline.design/ZgdSd1EG3vLDL3gn/scene.splinecode"></spline-viewer>
                 </div>
             </section>
+
         </>
     )
 }
