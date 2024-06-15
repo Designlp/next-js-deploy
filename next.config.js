@@ -5,6 +5,18 @@ const nextConfig = {}
 module.exports = {
 
     output: 'export',
+    webpack: (config, { isServer }) => {
+        // Configura webpack aquí
+        config.module.rules.push({
+          test: /\.svg$/,
+          issuer: {
+            and: [/\.(js|ts|jsx|tsx)$/],
+          },
+          use: ['@svgr/webpack'],
+        });
+    
+        return config;
+      },
   };
   
 
